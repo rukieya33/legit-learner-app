@@ -8,3 +8,21 @@ form, #btn_find{
     justify-content: center;
    
 }
+
+.search-filter{
+    width: 230px;
+    height:900px;
+    background-color:#f1f1f1;
+}
+
+.type{
+  display: flex;
+  justify-content: center;
+}
+
+.filter{
+   margin-top: 33px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
