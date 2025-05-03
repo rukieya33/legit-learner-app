@@ -1,0 +1,130 @@
+<!-- layout - header/horizontal nav bar
+ showing main navigations and a vertical navbar to show the actions for each main navigation
+  LOL
+  LOL
+  mistakes done-->
+<%= javascript_include_tag "searches" %>
+<%= stylesheet_link_tag "search" %>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Legit Learner</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<link href="/stylesheets/search.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="navbar navbar-dark container-fluid me-5">
+    <a class="navbar-brand ms-5" href="#">Legit Learner</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar navbar-dark navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/course">My courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mini-Assignments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/account">My account</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>-->
+        </li>
+      </ul>
+      <form class="d-flex me-5" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button id="search-btn" class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--<ul class="navbar-vertical">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Learn</a>>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Progress</a>
+        </li>
+        </ul>-->
+        
+<div class="search-filter">
+   <p>Filter by:</p>
+  <div class="type">
+    category:
+        <div class="filter">
+                <input class="form-control-checkbox" type="checkbox">Science</p>
+                <input class="form-control-checkbox" type="checkbox">Tech</p>
+                <input class="form-control-checkbox" type="checkbox">Maths</p>
+                <input class="form-control-checkbox" type="checkbox">Engineering</p>
+                
+        </div>
+    difficulty:
+        <div class="filter">
+                <input class="form-control-checkbox" type="checkbox">beginner</p>
+                <input class="form-control-checkbox" type="checkbox">intermediate</p>
+                <input class="form-control-checkbox" type="checkbox">advanced</p>
+        </div>
+    course:
+        <div class="filter">
+                <input class="form-control-checkbox" type="checkbox">Biology</p>
+                <input class="form-control-checkbox" type="checkbox">Chemistry</p>
+                <input class="form-control-checkbox" type="checkbox">Physics</p>
+                <input class="form-control-checkbox" type="checkbox">Astronomy</p>
+                <input class="form-control-checkbox" type="checkbox">Food Science</p>
+                <input class="form-control-checkbox" type="checkbox">Physcology</p>
+                <input class="form-control-checkbox" type="checkbox">Applied Science</p>
+                <input class="form-control-checkbox" type="checkbox">Computer Science</p>
+                <input class="form-control-checkbox" type="checkbox">Software Engineering</p>
+                <input class="form-control-checkbox" type="checkbox">Science</p>
+                <input class="form-control-checkbox" type="checkbox">Mathematics</p>
+                <input class="form-control-checkbox" type="checkbox">Mechanical Engineering</p>
+                <input class="form-control-checkbox" type="checkbox">Electrical Engineering</p>
+                <input class="form-control-checkbox" type="checkbox">Civil Engineering</p>
+                
+        </div>
+    type:
+        <div class="filter">
+                <input class="form-control-checkbox" type="checkbox">Text-based</p>
+                <input class="form-control-checkbox" type="checkbox">Video-based</p>
+        </div>
+  </div>
+</div>
+
+<form id="form" class="d-flex me-5" role="search">
+    <input id="searchi" class="form-control me-2" type="search" placeholder="Enter a course..e.g Physics" aria-label="Enter a course..e.g Physics">
+    <button id="btn_find" class="btn btn-outline-success" type="submit">Find</button>
+</form>
+<div class="search-results">
+  <!--<img src="img_avatar.png" alt="Avatar" style="width:100%">-->
+</div>
+<footer>2025 Copyright &copy;</footer>
+</body>
+</html>
